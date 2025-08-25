@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Upgrading Biogas CO2 to Green Methanol via Wind & Solar-Powered Alkaline Electrolysis - Power to X -
 
 ## Authors
@@ -149,3 +150,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 This work was developed as part of research into sustainable energy systems and power-to-X technologies for green fuel production. Special thanks to the developers of the open-source libraries that made this analysis possible.
+=======
+# Upgrading-Biogas-CO2-to-Green-Methanol-via-Wind-Solar-Powered-Alkaline-Electrolysis
+This Python script simulates a hybrid solar and wind farm using pvlib and windpowerlib. It fetches NASA POWER API data to model combined energy output. The code then analyzes the energy balance against an electrolyzer and methanol plant's consumption, calculating the net grid surplus or deficit and visualizing the results.
+>>>>>>> 4e74ac16a7b6020fc5c65cd3539eed9d450ea98e
