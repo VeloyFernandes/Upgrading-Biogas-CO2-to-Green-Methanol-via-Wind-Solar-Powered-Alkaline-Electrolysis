@@ -2,9 +2,9 @@
 
 ## Authors
 
-- **Aung Kyawo** (Email: akyawo24@student.aau.dk)
-- **Veloy Fernandes** (Email: vferna24@student.aau.dk) 
-- **Denizhan Arslanbeka** (Email: darsla24@student.aau.dk)
+- **Aung Kyawo** 
+- **Veloy Fernandes** 
+- **Denizhan Arslanbeka** 
 
 ## Description
 
