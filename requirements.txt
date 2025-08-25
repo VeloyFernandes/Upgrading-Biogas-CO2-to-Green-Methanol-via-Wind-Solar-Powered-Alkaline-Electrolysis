@@ -1,0 +1,30 @@
+﻿# Core scientific computing libraries
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# Solar energy modeling
+pvlib>=0.9.0
+
+# Wind energy modeling  
+windpowerlib>=0.2.0
+
+# Weather data and geospatial
+requests>=2.25.0
+geopandas>=0.10.0
+contextily>=1.1.0
+
+# Data visualization
+matplotlib>=3.4.0
+windrose>=1.6.0
+
+# Progress tracking
+tqdm>=4.60.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Optional: Enhanced plotting
+seaborn>=0.11.0
+plotly>=5.0.0
