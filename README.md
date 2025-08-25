@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿# Upgrading Biogas CO2 to Green Methanol via Wind & Solar-Powered Alkaline Electrolysis - Power to X -
+#﻿# Upgrading Biogas CO2 to Green Methanol via Wind & Solar-Powered Alkaline Electrolysis - Power to X -
 
 ## Authors
 
