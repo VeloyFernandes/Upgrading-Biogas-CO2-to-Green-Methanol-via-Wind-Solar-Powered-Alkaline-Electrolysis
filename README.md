@@ -1,0 +1,2 @@
+# Upgrading-Biogas-CO2-to-Green-Methanol-via-Wind-Solar-Powered-Alkaline-Electrolysis
+This Python script simulates a hybrid solar and wind farm using pvlib and windpowerlib. It fetches NASA POWER API data to model combined energy output. The code then analyzes the energy balance against an electrolyzer and methanol plant's consumption, calculating the net grid surplus or deficit and visualizing the results.
