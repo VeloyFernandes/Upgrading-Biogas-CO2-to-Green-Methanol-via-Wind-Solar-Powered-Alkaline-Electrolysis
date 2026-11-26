@@ -110,9 +110,9 @@ Generates comprehensive plots and visualizations:
 
 ## Interactive Website
 
-An interactive web UI for the project lives in the `docs/` folder and is published with GitHub Pages:
+An interactive web UI for the project lives in the `docs/` folder and is published at:
 
-**https://veloyfernandes.github.io/Upgrading-Biogas-CO2-to-Green-Methanol-via-Wind-Solar-Powered-Alkaline-Electrolysis/**
+**https://veloyfernandes.github.io/green-methanol/**
 
 It includes:
 - **Overview and process flow** – headline results and live mass flows (H2, CO2, methanol, water, oxygen)
