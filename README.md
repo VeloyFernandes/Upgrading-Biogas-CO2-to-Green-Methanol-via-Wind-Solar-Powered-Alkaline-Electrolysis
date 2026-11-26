@@ -2,6 +2,8 @@
 
 ## Authors
 
+Semester project, MSc in Sustainable Energy Engineering, Aalborg University (2025).
+
 - **Aung Kyawo** 
 - **Veloy Fernandes** 
 - **Denizhan Arslanbeka** 
@@ -22,8 +24,7 @@ The simulation provides detailed analysis of:
 ### 1. Initial Setup
 The notebook begins by importing essential Python libraries and defining user-configurable parameters for both solar and wind farm simulations:
 
-- **Libraries**: pvlib for solar modeling, windpowerlib for wind modeling, pandas for data manipulation, matplotlib for visualization, 
-umpy for numerical computations
+- **Libraries**: pvlib for solar modeling, windpowerlib for wind modeling, pandas for data manipulation, matplotlib for visualization, numpy for numerical computations
 - **Solar Parameters**: Farm capacity (304 MW DC), location coordinates (Aabenraa, Denmark), panel specifications, tilt and azimuth angles
 - **Wind Parameters**: Turbine specifications (V90/3000), number of turbines (20), spacing factors, target hub height (130m)
 - **Location**: Latitude 55.03N, Longitude 9.28E (Aabenraa Kasso, Denmark)
@@ -93,18 +94,18 @@ Generates comprehensive plots and visualizations:
 ## Installation and Usage
 
 1. **Install Required Packages**:
-   `ash
+   ```bash
    pip install -r requirements.txt
-   `
+   ```
 
 2. **Run the Notebook**:
-   - Open Wind_Solar_v24.ipynb in Jupyter Notebook or JupyterLab
+   - Open `Wind_Solar_v24.ipynb` in Jupyter Notebook or JupyterLab
    - Execute cells sequentially from top to bottom
    - Modify parameters in the initial setup section as needed
 
 3. **Key Parameters to Configure**:
-   - SOLAR_FARM_TARGET_DC_CAPACITY_MW: Target solar farm capacity
-   - WIND_NUM_TURBINES: Number of wind turbines
+   - `SOLAR_FARM_TARGET_DC_CAPACITY_MW`: Target solar farm capacity
+   - `WIND_NUM_TURBINES`: Number of wind turbines
    - Location coordinates for your specific site
    - Consumption parameters for your electrolysis system
 
@@ -112,7 +113,7 @@ Generates comprehensive plots and visualizations:
 
 An interactive web UI for the project lives in the `docs/` folder and is published at:
 
-**https://veloyfernandes.github.io/green-methanol/**
+**https://veloyfernandes.com/green-methanol/**
 
 It includes:
 - **Overview and process flow** – headline results and live mass flows (H2, CO2, methanol, water, oxygen)
@@ -179,3 +180,88 @@ This work was developed as part of research into sustainable energy systems and 
 =======
 # Upgrading-Biogas-CO2-to-Green-Methanol-via-Wind-Solar-Powered-Alkaline-Electrolysis
 This Python script simulates a hybrid solar and wind farm using pvlib and windpowerlib. It fetches NASA POWER API data to model combined energy output. The code then analyzes the energy balance against an electrolyzer and methanol plant's consumption, calculating the net grid surplus or deficit and visualizing the results.
+
+## Data sources and references
+
+- **NASA POWER.** The data was obtained from the National Aeronautics and Space
+  Administration (NASA) Langley Research Center (LaRC) Prediction Of Worldwide
+  Energy Resources (POWER) project, funded through the NASA Earth Science
+  Division. Hourly meteorology and irradiance for 2023 were retrieved from the
+  POWER Hourly API (https://power.larc.nasa.gov).
+- **pvlib python.** W. F. Holmgren, C. W. Hansen and M. A. Mikofski (2018).
+  pvlib python: a python package for modeling solar energy systems. *Journal of
+  Open Source Software* 3(29), 884. https://doi.org/10.21105/joss.00884
+- **pvlib python.** K. S. Anderson, C. W. Hansen, W. F. Holmgren, A. R. Jensen,
+  M. A. Mikofski and A. Driesse (2023). pvlib python: 2023 project update.
+  *Journal of Open Source Software* 8(92), 5994.
+  https://doi.org/10.21105/joss.05994
+- **windpowerlib.** Reiner Lemoine Institut and contributors. windpowerlib: a
+  Python library to model wind power plants. MIT licence.
+  https://github.com/wind-python/windpowerlib (each release is archived on
+  Zenodo with its own DOI). Turbine power curves, including the V90/3000 used
+  here, come from the turbine library it draws from the Open Energy Database.
+- **System Advisor Model (SAM)**: National Renewable Energy Laboratory component databases for photovoltaic modules and inverters
+
+## Future Improvements
+
+- **Weather Data Enhancement**: Integrate actual measured weather data instead of clear-sky models for more accurate solar predictions
+- **Economic Analysis**: Add comprehensive cost analysis including CAPEX, OPEX, and LCOE calculations
+- **Energy Storage Integration**: Develop sophisticated battery storage and energy management models
+- **Grid Integration**: Model grid stability impacts and power quality considerations  
+- **Interactive Dashboard**: Create web-based dashboard for real-time results visualization and scenario analysis
+- **Optimization Algorithms**: Implement automated system sizing and configuration optimization
+- **Seasonal Storage**: Model long-term energy storage solutions for seasonal variations
+- **Carbon Footprint Analysis**: Add lifecycle carbon assessment for the complete power-to-X system
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+This work was developed as part of research into sustainable energy systems and power-to-X technologies for green fuel production. Special thanks to the developers of the open-source libraries that made this analysis possible.
+=======
+# Upgrading-Biogas-CO2-to-Green-Methanol-via-Wind-Solar-Powered-Alkaline-Electrolysis
+This Python script simulates a hybrid solar and wind farm using pvlib and windpowerlib. It fetches NASA POWER API data to model combined energy output. The code then analyzes the energy balance against an electrolyzer and methanol plant's consumption, calculating the net grid surplus or deficit and visualizing the results.
+
+## Data sources and references
+
+- **NASA POWER.** The data was obtained from the National Aeronautics and Space
+  Administration (NASA) Langley Research Center (LaRC) Prediction Of Worldwide
+  Energy Resources (POWER) project, funded through the NASA Earth Science
+  Division. Hourly meteorology and irradiance for 2023 were retrieved from the
+  POWER Hourly API (https://power.larc.nasa.gov).
+- **pvlib python.** W. F. Holmgren, C. W. Hansen and M. A. Mikofski (2018).
+  pvlib python: a python package for modeling solar energy systems. *Journal of
+  Open Source Software* 3(29), 884. https://doi.org/10.21105/joss.00884
+- **pvlib python.** K. S. Anderson, C. W. Hansen, W. F. Holmgren, A. R. Jensen,
+  M. A. Mikofski and A. Driesse (2023). pvlib python: 2023 project update.
+  *Journal of Open Source Software* 8(92), 5994.
+  https://doi.org/10.21105/joss.05994
+- **windpowerlib.** S. Haas, B. Krien, B. Schachler, S. Bot, K. Zeli and
+  F. Maurer (2024). windpowerlib: a Python library to model wind power plants.
+  *Journal of Open Source Software*. Turbine power curves (including the V90/3000
+  used here) come from the windpowerlib / Open Energy Database turbine library.
+- **System Advisor Model (SAM).** National Renewable Energy Laboratory. Module
+  and inverter parameter databases, accessed through pvlib.
+- **Natural Earth.** Map outlines (1:10m), public domain.
+- **Apache ECharts.** Charting library bundled in `docs/vendor/`, Apache License
+  2.0; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+## Declarations
+
+- **Academic origin.** The notebook and its results come from a group semester
+  project at Aalborg University. The interactive website in `docs/` was built
+  afterwards on top of the notebook's models.
+- **Independence.** The repository has not been reviewed or endorsed by
+  Aalborg University. Cost inputs are the project's own study assumptions, not
+  quotes or data from any company.
+- **Trademarks.** Product and company names, such as the turbine model, are
+  used only to identify the equipment modelled and remain the property of
+  their owners.
+
+## Licence
+
+The code is released under the [MIT Licence](LICENSE). Third-party data and the
+bundled ECharts library keep their own terms, listed above and in
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

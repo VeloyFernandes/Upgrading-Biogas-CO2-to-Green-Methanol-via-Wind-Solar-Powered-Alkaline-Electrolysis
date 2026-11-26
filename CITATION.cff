@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Upgrading Biogas CO2 to Green Methanol via Wind and Solar-Powered Alkaline Electrolysis"
+abstract: "Hourly simulation of a co-located solar and wind farm supplying an alkaline electrolyser and methanol plant, with energy balance, site comparison and levelised cost of methanol."
+authors:
+  - family-names: Kyawo
+    given-names: Aung
+  - family-names: Fernandes
+    given-names: Veloy
+  - family-names: Arslanbeka
+    given-names: Denizhan
+type: software
+license: MIT
+repository-code: "https://github.com/VeloyFernandes/Upgrading-Biogas-CO2-to-Green-Methanol-via-Wind-Solar-Powered-Alkaline-Electrolysis"
+url: "https://veloyfernandes.com/green-methanol/"
+keywords:
+  - power-to-x
+  - green methanol
+  - electrolysis
+  - wind energy
+  - solar energy
