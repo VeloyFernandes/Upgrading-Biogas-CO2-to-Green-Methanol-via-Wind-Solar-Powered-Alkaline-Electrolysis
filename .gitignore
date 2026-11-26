@@ -161,3 +161,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Website data pipeline cache
+nasa_power_cache/
+node_modules/

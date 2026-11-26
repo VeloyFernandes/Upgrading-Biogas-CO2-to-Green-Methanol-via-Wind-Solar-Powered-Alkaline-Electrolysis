@@ -108,6 +108,33 @@ Generates comprehensive plots and visualizations:
    - Location coordinates for your specific site
    - Consumption parameters for your electrolysis system
 
+## Interactive Website
+
+An interactive web UI for the project lives in the `docs/` folder and is published with GitHub Pages:
+
+**https://veloyfernandes.github.io/Upgrading-Biogas-CO2-to-Green-Methanol-via-Wind-Solar-Powered-Alkaline-Electrolysis/**
+
+It includes:
+- **Overview and process flow** – headline results and live mass flows (H2, CO2, methanol, water, oxygen)
+- **Energy balance and scenario simulator** – resize the solar farm, wind farm, electrolyzer and methanol plant, switch between clear-sky and all-sky solar, and see the hourly, daily, weekly and monthly balance, grid import/export and the monthly table update instantly (with CSV download)
+- **Solar and wind pages** – system design, irradiance, tilt/azimuth sensitivity, power curve, Weibull distribution, wind rose and seasonal complementarity
+- **Site comparison** – map and ranking of 31 Danish locations
+- **Economics** – editable levelised cost of methanol with Monte Carlo and tornado sensitivity analysis
+
+The site is fully static. To preview it locally, open `docs/index.html` in a browser.
+
+**Regenerating the data** (re-runs the notebook's models and writes `docs/assets/data.js`):
+```bash
+pip install -r requirements.txt
+python scripts/build_site_data.py
+```
+
+**Tests** (calculation checks against the notebook's printed results, and a browser test that needs Playwright):
+```bash
+node --test tests/model.test.js
+node tests/e2e.js
+```
+
 ## Results
 
 The simulation provides:
