@@ -6,7 +6,7 @@ Semester project, MSc in Sustainable Energy Engineering, Aalborg University (202
 
 - **Aung Kyawo** 
 - **Veloy Fernandes** 
-- **Denizhan Arslanbeka** 
+- **Denizhan Arslanbek** 
 
 ## Description
 
