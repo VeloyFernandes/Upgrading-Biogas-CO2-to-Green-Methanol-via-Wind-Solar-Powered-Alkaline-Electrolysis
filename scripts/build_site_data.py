@@ -196,13 +196,11 @@ def wind_farm_power_w(weather, spacing):
     farm = WindFarm(wind_turbine_fleet=fleet)
     h = int(HUB_HEIGHT)
     model = TurbineClusterModelChain(
-        farm, wake_losses_model="jensen" if False else None) if False else TurbineClusterModelChain(
-        farm, **{"wake_loss_model": "jensen",
-                 "wind_direction_model": (f"wind_direction_{h}m", HUB_HEIGHT),
-                 "smoothing": True, "power_output_model": "power_curve",
-                 "density_model": "barometric", "temperature_model": "linear_gradient",
-                 "wind_speed_model": "logarithmic", "density_correction": True,
-                 "obstacle_height": 0})
+        farm, wake_loss_model="jensen",
+        wind_direction_model=(f"wind_direction_{h}m", HUB_HEIGHT),
+        smoothing=True, power_output_model="power_curve",
+        density_model="barometric", temperature_model="linear_gradient",
+        wind_speed_model="logarithmic", density_correction=True, obstacle_height=0)
     return model.run_model(weather).power_output, turbine
 
 
